@@ -1,6 +1,7 @@
  import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
   import 'package:shop/components/product_grid.dart';
+import 'package:shop/utils/app_routes.dart';
 
 import '../models/cart.dart';
 
@@ -10,7 +11,7 @@ import '../models/cart.dart';
   }
 
   class ProductsOverviewPage extends StatefulWidget {
-  const ProductsOverviewPage({Key? key}) : super(key: key);
+  const ProductsOverviewPage({super.key});
 
   @override
   State<ProductsOverviewPage> createState() => _ProductsOverviewPageState();
@@ -49,7 +50,9 @@ import '../models/cart.dart';
        ),
        Consumer<Cart>(
          child: IconButton(
-           onPressed: () {},
+           onPressed: () {
+             Navigator.of(context).pushNamed(AppRoutes.CART);
+           },
            icon: const Icon(Icons.shopping_cart),
          ),
          builder: (ctx, cart, child) => Badge(
