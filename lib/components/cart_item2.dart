@@ -6,7 +6,7 @@ import 'package:shop/models/cart_item.dart';
 class CartItemWidget extends StatelessWidget {
   final CartItem cartItem;
 
-  const CartItemWidget(this.cartItem, {super.key});
+  const CartItemWidget(this.cartItem, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class CartItemWidget extends StatelessWidget {
         ),
         child: const Icon(
           Icons.delete,
-          color: Colors.black,
+          color: Colors.white,
           size: 40,
         ),
       ),

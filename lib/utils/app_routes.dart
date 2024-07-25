@@ -1,6 +1,6 @@
 class AppRoutes {
+  static const home = '/';
   static const productDetail = '/product-detail';
-  static const CART = '/cart';
-  static const HOME = '/';
-  static const ORDERS = '/orders';
+  static const cart = '/cart';
+  static const orders = '/orders';
 }

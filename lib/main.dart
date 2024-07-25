@@ -41,10 +41,10 @@ class MyApp extends StatelessWidget {
         ),
         // home: const ProductsOverviewPage(),
         routes: {
-          AppRoutes.HOME: (ctx) => const ProductsOverviewPage(),
+          AppRoutes.home: (ctx) => const ProductsOverviewPage(),
           AppRoutes.productDetail: (ctx) => const ProductDetailPage(),
-          AppRoutes.CART: (ctx) => const CartPage(),
-          AppRoutes.ORDERS: (ctx) => const OrdersPage(),
+          AppRoutes.cart: (ctx) => const CartPage(),
+          AppRoutes.orders: (ctx) => const OrdersPage(),
         },
         debugShowCheckedModeBanner: false,
       ),
